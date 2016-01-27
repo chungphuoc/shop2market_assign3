@@ -1,0 +1,2 @@
+$ ->
+  $('#temperature').number(true)

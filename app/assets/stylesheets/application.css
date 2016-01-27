@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require weather-icons
+ *= require bootstrap.min
+ *= require dashboard
  */

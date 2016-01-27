@@ -43,6 +43,9 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rack-mini-profiler'
 end
 
 group :test do
@@ -58,3 +61,4 @@ group :test do
   gem 'ffaker'
   gem 'simplecov'
 end
+gem 'weather-icons-rails'
