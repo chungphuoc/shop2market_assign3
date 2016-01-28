@@ -1,2 +1,2 @@
 $ ->
-  $('#temperature').number(true)
+  $('#temperature').number(true, 2)
