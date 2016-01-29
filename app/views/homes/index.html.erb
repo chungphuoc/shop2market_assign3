@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12 col-md-12 main">
-    <h1 class="page-header"><i class="wi wi-thermometer"></i> Converter temperature</h1>
+    <h1 class="page-header">Converter temperature</h1>
     <%= form_tag '', class: 'form-query', method: :get do %>
         <div class="col-md-12 form-group">
           <%= label_tag "label", 'Please enter the temperature' %>
@@ -21,6 +21,17 @@
         <pre><code><%= @results %></code><%= raw @display_icon %></pre>
       <% else %>
         Something went wrong. Please try again!
+      <% end %>
+    </div>
+
+    <h2 class="sub-header">History</h2>
+    <div class="table-responsive">
+      <% if @histories.present? %>
+        <% @histories.each do |history|%>
+          <pre><code><%= raw history.content %></code></pre>
+        <% end %>
+      <% else %>
+        Don't have any records.
       <% end %>
     </div>
   </div>
