@@ -61,3 +61,4 @@ group :test do
   gem 'ffaker'
   gem 'simplecov'
 end
+gem 'puma'
